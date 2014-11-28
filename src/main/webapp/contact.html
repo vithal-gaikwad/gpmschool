@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome to GPM school</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen">
+<script
+src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+</script>
+
+<script>
+function initialize()
+{
+var mapProp = {
+  center:new google.maps.LatLng(17.930956, 76.619759),
+  zoom:12,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="content">
+<div id="header">
+<span id="logo"></span>
+<span id="title">
+<label id="big-title-text">Gramin Prashala Madaj</label>
+<label id="small-title-text">Tq. Omerga Dist. Osmanabad</label>
+</span>
+</div>
+
+
+<div id="nav-bar">
+<a href="home.html">HOME</a> |
+<a href="about_us.html" name="link1" id="link1" onmouseover="MM_showMenu(window.mm_menu_1216184122_0,-5,20,null,'link1')" onmouseout="MM_startTimeout();">ABOUT US</a> |
+<a href="philosophy.html" >PHILOSOPHY</a> |
+<a href="campus_tour.html" >CAMPUS TOUR</a> | 
+<a href="curriculum.html" >CURRICULUM</a> | 
+<a href="admission.html" >ADMISSION</a> | 
+<a href="gallery.html" >GALLERY</a> | 
+<a href="teacher_development.html" >TEACHER DEVELOPMENT </a> | 
+<a href="parent_education.html" >PARENT EDUCATION</a> | 
+<a href="contact.html">CONTACT US</a></td>
+</div>
+<div id="body-content-top-part">
+</div>
+
+<div id="body-content">
+
+<div id="body-content-left-part">
+<span id="admission-open-image">
+<img src="css/images/sample2.png">
+</span>
+
+</div>
+<div id="body-content-middle-part">
+<div id="inner-page-heading-text">Contact Us</div>
+<div id="address">
+<h3>Gramin Prashala Madaj</h3>
+Tq. Omerga, Dist. Osmanabad<br/>
+Maharashtra-413606
+<h5>Email: contact@graminprashalamadaj.in</h5>
+<h3>Ph. +912475-268850</h3>
+</div>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+</div>
+<div id="body-content-right-part">
+
+</div>
+
+</div>
+<div id="footer-top"></div>
+<div id="footer">
+<label class="copyrights">
+Copyright © 2014 Gramin Prashala Madaj, Tq. Omerga, Dist. Osmanabad. All Rights Reserved.
+</label>
+</div>
+
+</div>
+
+
+</body>
+</html>
