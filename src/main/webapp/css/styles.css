@@ -1,13 +1,13 @@
 @CHARSET "ISO-8859-1";
 
 /*common styles*/
-html,body {
+html, body {
 	margin: 0;
 	padding: 0;
-	/* 	height: 100%; */
+	height: 100%;
 	background-color: gray;
 	width: 100%;
-	font-family:cambria;
+	font-family: cambria;
 }
 
 #content {
@@ -15,8 +15,25 @@ html,body {
 	margin-left: 15%;
 	margin-right: 15%;
 	border: 1px solid #b2b2b2;
-	height: 100%;
+	/* 	height: 100%; */
 	background-color: #f8f8f8;
+	padding-left: 12px;
+	padding-right: 12px;
+	/* 	margin-bottom: 12px; */
+}
+
+/* gradient background */
+#body-content {
+	background: -webkit-linear-gradient(#f8f8f8, #FFF3EC);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#f8f8f8, #FFF3EC);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#f8f8f8, #FFF3EC);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#f8f8f8, #FFF3EC); /* Standard syntax */
+	/* For Internet Explorer 8 */
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#f8f8f8, endColorstr=#FFF3EC)";
 }
 
 /*header styles*/
@@ -25,6 +42,8 @@ html,body {
 	padding-top: 10px;
 	background-color: #FFF3EC;
 	height: 75px;
+	border-left: 1px solid #b2b2b2;
+	border-right: 1px solid #b2b2b2;
 }
 
 #logo {
@@ -56,6 +75,12 @@ html,body {
 	font-family: cambria;
 }
 
+#school-slogan {
+	margin-left: 210px;
+	font-size: 20px;
+	color: rgb(192, 185, 185);
+}
+
 #nav-bar {
 	height: 25px;
 	background-color: #800000;
@@ -78,17 +103,20 @@ html,body {
 }
 
 #body-content {
-	height: 800px;
+	height: 900px;
+	border-left: 1px solid #b2b2b2;
+	border-right: 1px solid #b2b2b2;
 }
 
 #body-content-top-part {
-	width: 100%;
 	height: 15px;
 	background-color: #E4E4E4;
+	border-left: 1px solid #b2b2b2;
+	border-right: 1px solid #b2b2b2;
 }
 
 #body-content-left-part {
-	width: 25%;
+	width: 23%;
 	height: 100%;
 	float: left;
 }
@@ -109,27 +137,38 @@ html,body {
 	border-style: none dotted;
 	height: 100%;
 	float: left;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 5px;
 }
 
-#inner-page-heading-text{
-	text-align:left;
-	font-size:18px;
-	color:#800000;
-	font-weight:600;
-	font-family:cambria;
-	margin:0px auto;
+#googleMap {
+	width: 495px;
+	height: 380px;
+	border: 1px solid gray;
 }
-#address{
-	text-align:center;
-	font-size:16px;
-	margin-bottom:20px;
+
+#inner-page-heading-text {
+	text-align: left;
+	font-size: 18px;
+	color: #800000;
+	font-weight: 600;
+	font-family: cambria;
+	margin: 0px auto;
 }
-#address h3,h5{
-	margin:0px;	
-	}
+
+#address {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#address h3, h5 {
+	margin: 0px;
+}
 
 #body-content-right-part {
-	width: 25%;
+	width: 23%;
 	height: 100%;
 	float: left;
 }
@@ -143,6 +182,8 @@ html,body {
 	height: 30px;
 	background-color: #E4E4E4;
 	padding-top: 5px;
+	border-left: 1px solid #b2b2b2;
+	border-right: 1px solid #b2b2b2;
 }
 
 .copyrights {
@@ -154,18 +195,33 @@ html,body {
 	valign: middle;
 }
 
+/* gallery page */
+.main_more-link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	padding: 5px;
+}
 
+.main_more-link:hover {
+	color: #800000;
+}
 
+/*principals-message */
+#principals-image img {
+	height: 220px;
+	width: 160px;
+	float: right;
+	margin-right: 10px;
+}
 
+#principals-message {
+	width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+#principals-name {
+	width: 50%;
+	float: left;
+}
